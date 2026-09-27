@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Anshuman Kushwaha | Full-Stack Developer (MERN Stack)",
   description:
-    "Portfolio of Anshuman Kushwaha, a third-year Computer Science student & MERN Stack Developer with 4+ production applications, AI integrations, and internship experience.",
+    "Portfolio of Anshuman Kushwaha, a fourth-year Computer Science student & MERN Stack Developer with 4+ production applications, AI integrations, and internship experience.",
   keywords: [
     "Anshuman Kushwaha",
     "Full Stack Developer",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Anshuman Kushwaha | Full-Stack Developer (MERN Stack)",
     description:
-      "Portfolio of Anshuman Kushwaha, a third-year Computer Science student & MERN Stack Developer with 4+ production applications, AI integrations, and internship experience.",
+      "Portfolio of Anshuman Kushwaha, a fourth-year Computer Science student & MERN Stack Developer with 4+ production applications, AI integrations, and internship experience.",
     url: siteUrl,
     siteName: "Anshuman Kushwaha Portfolio",
     type: "website",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Anshuman Kushwaha | Full-Stack Developer (MERN Stack)",
     description:
-      "Portfolio of Anshuman Kushwaha, a third-year Computer Science student & MERN Stack Developer.",
+      "Portfolio of Anshuman Kushwaha, a fourth-year Computer Science student & MERN Stack Developer.",
   },
 };
 

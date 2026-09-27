@@ -80,7 +80,7 @@ export default function Hero() {
           variants={item}
           className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 sm:text-xl"
         >
-          Third-year Computer Science student specializing in the{" "}
+          Fourth-year Computer Science student specializing in the{" "}
           <strong className="font-semibold text-slate-900">MERN Stack</strong> with proven hands-on
           experience independently building and shipping 4+ production web applications and
           AI-integrated platforms.

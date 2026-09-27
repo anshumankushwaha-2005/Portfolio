@@ -8,11 +8,11 @@ export const personalInfo = {
   heroHeading: "Hi, I'm Anshuman Kushwaha.",
   heroSubheading: "Full-Stack Developer (MERN) & Software Development Intern Candidate",
   heroDescription:
-    "Third-year Computer Science student specializing in the MERN stack, with hands-on experience building and deploying 4+ production web applications and AI-integrated products.",
+    "Fourth-year Computer Science student specializing in the MERN stack, with hands-on experience building and deploying 4+ production web applications and AI-integrated products.",
   introLong:
-    "Third-year Computer Science student specializing in the MERN stack, with hands-on experience building and deploying full-stack web applications, including AI-integrated projects. Skilled in JavaScript, Python, and REST API development, with a track record of independently shipping 4+ production applications. Seeking a Software Development / Full-Stack Development internship.",
+    "Fourth-year Computer Science student specializing in the MERN stack, with hands-on experience building and deploying full-stack web applications, including AI-integrated projects. Skilled in JavaScript, Python, and REST API development, with a track record of independently shipping 4+ production applications. Seeking a Software Development / Full-Stack Development internship.",
   about: [
-    "I'm a third-year Computer Science student at AKTU University, Lucknow, specializing in the MERN stack (MongoDB, Express.js, React, Node.js) with strong foundation in CS fundamentals and clean code architecture.",
+    "I'm a fourth-year Computer Science student at AKTU University, Lucknow, specializing in the MERN stack (MongoDB, Express.js, React, Node.js) with strong foundation in CS fundamentals and clean code architecture.",
     "With a track record of independently shipping 4+ production-ready web applications, I build seamless full-stack applications with responsive frontends, secure JWT authentication, and intelligent AI features.",
     "I have gained hands-on industry experience as a MERN Stack Intern at SRDT Pvt. Ltd. and as a Python Full Stack Intern & Trainee, delivering full-stack features, building RESTful APIs, and collaborating in agile teams.",
     "I'm actively seeking a Software Development / Full-Stack Development internship where I can contribute to real-world products, solve meaningful challenges, and grow with a great engineering team.",
@@ -117,7 +117,7 @@ export const educationList: Education[] = [
     degree: "B.Tech, Computer Science & Engineering",
     institution: "AKTU University, Lucknow",
     period: "2023 – Present",
-    details: "Third-year Computer Science student specializing in Full-Stack MERN Development & Software Engineering.",
+    details: "Fourth-year Computer Science student specializing in Full-Stack MERN Development & Software Engineering.",
   },
   {
     degree: "Senior Secondary (Class XII)",
