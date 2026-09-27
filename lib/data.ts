@@ -117,7 +117,7 @@ export const educationList: Education[] = [
     degree: "B.Tech, Computer Science & Engineering",
     institution: "AKTU University, Lucknow",
     period: "2023 – Present",
-    details: "Fourth-year Computer Science student specializing in Full-Stack MERN Development & Software Engineering.",
+    details: "Fourth-year Computer Science student specializing in Full-Stack MERN Development & Software Engineering. CGPA: 6.01",
   },
   {
     degree: "Senior Secondary (Class XII)",

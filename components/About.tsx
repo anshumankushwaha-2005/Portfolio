@@ -64,6 +64,10 @@ export default function About() {
                 </div>
                 <div className="space-y-1.5 text-xs text-slate-600">
                   <div className="flex justify-between">
+                    <span>B.Tech (CSE):</span>
+                    <span className="font-semibold text-violet-600">CGPA 6.01</span>
+                  </div>
+                  <div className="flex justify-between">
                     <span>Class XII (Senior Secondary):</span>
                     <span className="font-semibold text-indigo-600">70.8%</span>
                   </div>
