@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-[#f8fafc] text-text-primary font-body antialiased;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.04) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(14, 165, 233, 0.05) 0px, transparent 50%),
+      radial-gradient(at 50% 50%, rgba(16, 185, 129, 0.03) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(245, 158, 11, 0.03) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(99, 102, 241, 0.04) 0px, transparent 50%);
+    background-attachment: fixed;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-text-primary tracking-tight;
+  }
+
+  ::selection {
+    background-color: rgba(79, 70, 229, 0.18);
+    color: #312e81;
+  }
+
+  a,
+  button {
+    @apply outline-none;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    @apply ring-2 ring-accent ring-offset-2 ring-offset-white rounded-md;
+  }
+}
+
+@layer components {
+  /* Positive Glassmorphic Card */
+  .glass-card {
+    @apply relative rounded-2xl border border-slate-200/90 bg-white/85 backdrop-blur-xl shadow-card transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    @apply border-indigo-200 shadow-card-hover;
+  }
+
+  /* Positive Vibrant Gradient text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #4338ca 0%, #0284c7 50%, #059669 100%);
+    background-size: 200% auto;
+    animation: gradient-x 8s ease infinite;
+  }
+
+  /* Vibrant Positive Accent Button */
+  .btn-gradient {
+    @apply relative inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 shadow-md;
+    background: linear-gradient(135deg, #4f46e5 0%, #0284c7 50%, #059669 100%);
+    background-size: 200% auto;
+    box-shadow: 0 4px 16px rgba(79, 70, 229, 0.25);
+  }
+
+  .btn-gradient:hover {
+    box-shadow: 0 8px 24px rgba(79, 70, 229, 0.35);
+    transform: translateY(-2px);
+    background-position: right center;
+  }
+
+  /* Clean Ghost button */
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-300;
+  }
+
+  .btn-ghost:hover {
+    border-color: rgba(79, 70, 229, 0.4);
+    background: #f5f3ff;
+    color: #4f46e5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1);
+  }
+
+  /* Section heading with accent line */
+  .section-heading {
+    @apply relative inline-flex items-center gap-2.5 font-mono text-xs font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600;
+  }
+
+  /* Positive glowing orb backgrounds */
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    pointer-events: none;
+    opacity: 0.35;
+  }
+
+  /* Skill tag */
+  .skill-tag {
+    @apply relative rounded-lg border border-slate-200/80 px-3.5 py-1.5 font-mono text-xs font-medium text-slate-700 transition-all duration-200 bg-slate-50/70;
+  }
+
+  .skill-tag:hover {
+    border-color: #818cf8;
+    color: #4338ca;
+    background: #eef2ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.12);
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply px-6 sm:px-8 lg:px-12;
+  }
+
+  .balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
