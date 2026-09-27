@@ -6,7 +6,7 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-20 sm:py-28">
+    <section id="projects" className="relative py-20 sm:py-28 scroll-mt-24">
       <div className="mx-auto max-w-content section-padding">
         <ScrollReveal>
           <span className="section-heading">Featured Creations</span>

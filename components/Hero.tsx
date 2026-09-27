@@ -88,7 +88,15 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <motion.div variants={item} className="mt-8 flex flex-wrap items-center gap-4">
-          <a href="#projects" className="btn-gradient group">
+          <a
+            href="#projects"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+              window.history.pushState(null, "", "#projects");
+            }}
+            className="btn-gradient group cursor-pointer"
+          >
             <Sparkles size={16} />
             Explore Projects
             <ArrowRight size={15} className="transition-transform duration-200 group-hover:translate-x-1" />
@@ -101,7 +109,15 @@ export default function Hero() {
             <FileDown size={16} className="text-indigo-600" />
             Download Resume (PDF)
           </a>
-          <a href="#contact" className="inline-flex items-center gap-1.5 px-4 py-3 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition-colors">
+          <a
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+              window.history.pushState(null, "", "#contact");
+            }}
+            className="inline-flex items-center gap-1.5 px-4 py-3 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer"
+          >
             Get in touch &rarr;
           </a>
         </motion.div>

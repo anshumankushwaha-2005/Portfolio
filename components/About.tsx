@@ -6,7 +6,7 @@ import { GraduationCap, MapPin, Briefcase, Code, Award, Sparkles } from "lucide-
 
 export default function About() {
   return (
-    <section id="about" className="relative py-20 sm:py-28 bg-slate-50/50">
+    <section id="about" className="relative py-20 sm:py-28 bg-slate-50/50 scroll-mt-24">
       <div className="mx-auto max-w-content section-padding">
         <ScrollReveal>
           <span className="section-heading">About Me</span>

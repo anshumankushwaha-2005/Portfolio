@@ -6,7 +6,7 @@ import { Briefcase, Calendar, CheckCircle2, GraduationCap, MapPin } from "lucide
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-20 sm:py-28">
+    <section id="experience" className="relative py-20 sm:py-28 scroll-mt-24">
       <div className="mx-auto max-w-content section-padding">
         <ScrollReveal>
           <span className="section-heading">Career Journey</span>

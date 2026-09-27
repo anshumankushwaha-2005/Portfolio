@@ -15,6 +15,23 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      setIsOpen(false);
+      const targetId = href.replace("#", "");
+      if (targetId === "home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        const elem = document.getElementById(targetId);
+        if (elem) {
+          elem.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+      window.history.pushState(null, "", href);
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
@@ -27,7 +44,7 @@ export default function Navbar() {
         <a
           href="#home"
           className="flex items-center gap-2 text-lg font-bold tracking-tight text-slate-900 transition-colors"
-          onClick={() => setIsOpen(false)}
+          onClick={(e) => handleNavClick(e, "#home")}
         >
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-600 via-sky-600 to-emerald-500 text-white shadow-sm font-display font-black text-sm">
             AK
@@ -46,7 +63,8 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="relative px-3.5 py-2 text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-indigo-600 group"
+              onClick={(e) => handleNavClick(e, link.href)}
+              className="relative px-3.5 py-2 text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-indigo-600 group cursor-pointer"
             >
               {link.label}
               <span className="absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-emerald-500 transition-all duration-300 group-hover:w-3/4 rounded-full" />
@@ -89,8 +107,8 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="rounded-lg px-4 py-2.5 text-base font-medium text-slate-700 transition-all hover:bg-indigo-50 hover:text-indigo-600"
-                  onClick={() => setIsOpen(false)}
+                  className="rounded-lg px-4 py-2.5 text-base font-medium text-slate-700 transition-all hover:bg-indigo-50 hover:text-indigo-600 cursor-pointer"
+                  onClick={(e) => handleNavClick(e, link.href)}
                 >
                   {link.label}
                 </a>

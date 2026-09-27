@@ -62,8 +62,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${plexMono.variable}`}>
-      <body className="overflow-x-hidden bg-[#f8fafc]">
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${plexMono.variable} scroll-smooth`}>
+      <body className="bg-[#f8fafc] text-slate-900 antialiased selection:bg-indigo-500/20 selection:text-indigo-900">
         {/* Positive ambient glowing background orbs */}
         <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
           <div className="orb h-[550px] w-[550px] bg-indigo-200/20 -top-40 -left-40" />

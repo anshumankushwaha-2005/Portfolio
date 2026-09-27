@@ -43,7 +43,15 @@ export default function ResumeCTA() {
                 <FileDown size={16} strokeWidth={2.2} />
                 Download Complete Resume (PDF)
               </a>
-              <a href="#contact" className="btn-ghost !py-3.5 !px-6">
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                  window.history.pushState(null, "", "#contact");
+                }}
+                className="btn-ghost !py-3.5 !px-6 cursor-pointer"
+              >
                 <Send size={15} />
                 Get in Touch
               </a>

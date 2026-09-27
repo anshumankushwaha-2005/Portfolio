@@ -5,11 +5,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: clip;
     color-scheme: light;
   }
 
   body {
     @apply bg-[#f8fafc] text-text-primary font-body antialiased;
+    overflow-x: clip;
     background-image: 
       radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.04) 0px, transparent 50%),
       radial-gradient(at 100% 0%, rgba(14, 165, 233, 0.05) 0px, transparent 50%),

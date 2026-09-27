@@ -47,7 +47,7 @@ const categoryIcons: Record<string, { icon: React.ReactNode; color: string; bg: 
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-20 sm:py-28 bg-slate-50/60">
+    <section id="skills" className="relative py-20 sm:py-28 bg-slate-50/60 scroll-mt-24">
       <div className="mx-auto max-w-content section-padding">
         <ScrollReveal>
           <span className="section-heading">Technical Arsenal</span>
