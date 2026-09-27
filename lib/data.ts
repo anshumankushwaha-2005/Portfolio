@@ -175,7 +175,7 @@ export const projects: Project[] = [
       "Designed an interactive React frontend and a Node.js/Express + MongoDB backend with RESTful APIs",
       "Deployed to production on Vercel",
     ],
-    liveUrl: "https://github.com/anshumankushwaha-2005",
+    liveUrl: "https://codepilot-kappa.vercel.app",
     githubUrl: "https://github.com/anshumankushwaha-2005",
     imageSrc: "/projects/codepilot.jpg",
   },
